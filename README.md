@@ -1,6 +1,8 @@
 ## Description
 
-This repository contains the official [Elasticsearch](https://www.elastic.co/products/elasticsearch) Docker image from [Elastic](https://www.elastic.co/).
+Official Kibana image + removed xpack, tested on Openshift origin.
+
+To upgrade/downgrade version change the version.txt file
 
 Documentation can be found on the [Elastic web site](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html).
 
