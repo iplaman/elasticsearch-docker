@@ -21,7 +21,7 @@ DOCKER_COMPOSE := docker-compose -f docker-compose.yml -f docker-compose.hostpor
 .PHONY: all test lint clean pristine run run-single run-cluster build release-manager-snapshot push
 
 # Default target, build *and* run tests
-all: build test
+all: build
 
 test: lint build docker-compose.yml
 	./bin/pytest tests
