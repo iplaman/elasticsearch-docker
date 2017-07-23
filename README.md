@@ -8,6 +8,14 @@ Documentation can be found on the [Elastic web site](https://www.elastic.co/guid
 
 **Make sure you have read all the instructions properly, just "skimming through" will not help you.**
 
+## Running on Openshift
+```
+make
+docker push 172.30.1.1:5000/myproject/elasticsearch:5.5.0
+docker tag docker.elastic.co/elasticsearch/elasticsearch:5.5.0 172.30.1.1:5000/myproject/elasticsearch:5.5.0
+docker push 172.30.1.1:5000/myproject/elasticsearch:5.5.0
+oc new-app --image-stream=elasticsearch:5.5.0```
+
 ## Supported Docker versions
 
 The images have been tested on Docker 17.03.1-ce.
